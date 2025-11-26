@@ -1,26 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+
+/* Tailwind base + custom resets */
 @import "tailwindcss";
+@tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+:root{
+  --eterno-yellow: #F4D35E;
+  --eterno-black: #0b0b0b;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html, body, #__next {
+  height: 100%;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: white;
+  color: var(--eterno-black);
+}
+
+/* Utility for the overlay shadow on hero background */
+.hero-overlay {
+  background: linear-gradient(180deg, rgba(11,11,11,0.50) 0%, rgba(11,11,11,1) 100%);
+}
+
+/* simple appear animation used with intersection observer */
+.appear {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1500ms ease, transform 1500ms ease;
+}
+.appear.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Horizontal scrollbar nicety */
+.scroll-x {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.scrollbar-hide {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
 }
