@@ -59,7 +59,7 @@ export default function Hero() {
     return (
         <section className="relative h-screen w-full">
             <img src="/fondo.png" alt="Hero background" className="relative inset-0 w-full h-full object-cover"/>
-            <img ref={imageRef} src="/modelo_fondo.png" alt="Modelo de fondo" className="appear absolute bottom-0 right-0 min-[1800px]:right-100 w-60 min-[300px]:w-65 min-[380px]:w-75 sm:w-80 md:w-100 lg:w-130 object-cover"/>
+            <img ref={imageRef} src="/modelo_fondo.png" alt="Modelo de fondo" className="appear absolute bottom-0 right-0 min-[1800px]:right-100 w-60 min-[300px]:w-75 min-[380px]:w-75 sm:w-80 md:w-100 lg:w-130 object-cover"/>
             <div className="absolute inset-0 hero-overlay"></div>
 
             <section ref={ref} className="appear absolute top-30 sm:inset-0 z-10 max-w-7xl mx-auto px-6 h-full flex flex-col sm:justify-center">
