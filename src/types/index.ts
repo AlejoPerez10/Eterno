@@ -5,6 +5,6 @@ export type Product = {
     shortDescription: string
     badge?: string
     sizes?: string[]
-    image?: string // placeholder path or url
+    image: string // placeholder path or url
     labels?: string[] // e.g. ['men','new release','last units']
 }

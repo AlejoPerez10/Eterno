@@ -81,7 +81,7 @@ export default function Hero() {
 
             {/* Contenedor de la flecha clickeable */}
             <div ref={arrowRef}
-                className="appear absolute bottom-6 left-1/2 -translate-x-1/2 z-20 cursor-pointer" 
+                className="appear absolute bottom-0 left-1/2 -translate-x-1/2 z-20 cursor-pointer" 
                 onClick={handleScrollDown}
                 aria-label="Scroll down to next section" 
                 role="button"

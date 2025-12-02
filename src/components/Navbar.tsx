@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { useInView } from '../hooks/useInView'
 
 export default function Navbar() {
-    const items = ['Products','Men','Women','Hats & Caps','Accesories','About Us']
+    const items = ['Products','Men','Women','Caps','Accesories','About Us']
     const view = useInView<HTMLDivElement>()
 
     

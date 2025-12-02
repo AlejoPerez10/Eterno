@@ -2,10 +2,10 @@ import type { Product } from '../types'
 
 export default function ProductCard({ product }: { product: Product }) {
     return (
-        <section className="w-64 shrink-0 bg-white/20 rounded-lg shadow-sm overflow-hidden">
-            <div className="relative h-40 bg-gray-100">
+        <section className="w-80 shrink-0 bg-white/20 rounded-lg shadow-sm overflow-hidden">
+            <div className="relative flex h-120 max-h-120 bg-[radial-gradient(circle,transparent,black)]">
                 {/* Replace src with your product image */}
-                <img src={product.image ?? '/modelo_gorra_negra_verde.jpg'} alt={product.title} className="w-full h-full object-cover" />
+                <img src={product.image ?? '/modelo_gorra_negra_verde.jpg'} alt={product.title} className="flex m-auto max-h-full" />
                 {/* top-right labels */}
 
                 <div className="absolute top-2 right-2 flex flex-col items-end gap-1">

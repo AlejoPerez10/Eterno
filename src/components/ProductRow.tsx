@@ -105,7 +105,7 @@ export default function ProductRow({ title, products }: { title: string, product
                     <div 
                         // Aplica la transición y controla la opacidad
                         className={`
-                            absolute left-0 top-[7.5px] bottom-0 z-10 w-20 h-[calc(100%-16px)] pointer-events-none 
+                            absolute left-0 top-0 bottom-0 z-10 w-20 h-[calc(100%-15.5px)] mt-2 pointer-events-none 
                             bg-linear-to-r from-black via-black/70 to-transparent
                             transition-opacity duration-300 ease-in-out
                             ${canScrollLeft ? 'opacity-100' : 'opacity-0'}
@@ -128,7 +128,7 @@ export default function ProductRow({ title, products }: { title: string, product
                     <div 
                         // Aplica la transición y controla la opacidad
                         className={`
-                            absolute right-0 top-[7.5px] bottom-0 z-10 w-40 h-[calc(100%-16px)] pointer-events-none 
+                            absolute right-0 top-0 z-10 w-20 md:w-40 h-[calc(100%-15.5px)] mt-2 pointer-events-none 
                             bg-linear-to-l from-black via-black/70 to-transparent
                             transition-opacity duration-300 ease-in-out
                             ${canScrollRight ? 'opacity-100' : 'opacity-0'}
@@ -143,8 +143,7 @@ export default function ProductRow({ title, products }: { title: string, product
                     onClick={() => scroll('left')}
                     // Aplica la transición y controla la opacidad, y desactiva el botón si no se puede scrollear
                     className={`
-                        absolute left-0 z-20 p-2 bg-black/50 rounded-full hover:bg-black/80 shadow-lg ml-2 cursor-pointer
-                        transition-opacity duration-300 ease-in-out
+                        hidden lg:block lg:absolute left-0 z-20 p-2 bg-black/50 rounded-full hover:bg-black/80 shadow-lg ml-2 cursor-pointer transition-opacity duration-300 ease-in-out
                         ${canScrollLeft ? 'opacity-100' : 'opacity-0 pointer-events-none'}
                     `}
                     aria-label="Previous products"
@@ -157,8 +156,7 @@ export default function ProductRow({ title, products }: { title: string, product
                     onClick={() => scroll('right')}
                     // Aplica la transición y controla la opacidad, y desactiva el botón si no se puede scrollear
                     className={`
-                        absolute right-0 z-20 p-2 bg-black/50 rounded-full hover:bg-black/80 shadow-lg mr-2 cursor-pointer
-                        transition-opacity duration-300 ease-in-out
+                        hidden lg:block lg:absolute right-0 z-20 p-2 bg-black/50 rounded-full hover:bg-black/80 shadow-lg mr-2 cursor-pointer transition-opacity duration-300 ease-in-out
                         ${canScrollRight ? 'opacity-100' : 'opacity-0 pointer-events-none'}
                     `}
                     aria-label="Next products"
