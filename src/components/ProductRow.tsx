@@ -22,7 +22,7 @@ const ArrowSvg = ({ direction }: { direction: 'left' | 'right' }) => (
     </svg>
 )
 
-export default function ProductRow({ title, products }: { title: string, products: Product[] }) {
+export default function ProductRow({id, title, products }: { id:string, title: string, products: Product[] }) {
     const scrollRef = useRef<HTMLDivElement>(null)
     const [canScrollLeft, setCanScrollLeft] = useState(false)
     const [canScrollRight, setCanScrollRight] = useState(false)
@@ -92,7 +92,7 @@ export default function ProductRow({ title, products }: { title: string, product
     }, [updateScrollState])
 
     return (
-        <section ref={view} className="appear max-w-7xl mx-auto px-6 py-8">
+        <section id={id} ref={view} className="appear max-w-7xl mx-auto px-6 py-8 scroll-mt-20">
             <h2 className="text-xl font-bold mb-4 text-white">{title}</h2>
             
             {/* Contenedor principal: relative */}

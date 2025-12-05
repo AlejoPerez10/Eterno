@@ -8,7 +8,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Streatwear blanca comoda.',
         badge: 'NEW', // O 'BEST' o undefined
         sizes: ['S', 'M', 'L', 'XL'],
-        image: '/t-shirts-men/camisa_blanca.webp', // Tu ruta de imagen
+        images: ['/t-shirts-men/camisa_blanca.webp', '/t-shirts-men/camisa_blanca1.webp', '/t-shirts-men/camisa_cafe.webp'],
         labels: ['men', 'new release']
     },
     {
@@ -18,7 +18,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Oversize beige ligera.',
         badge: undefined,
         sizes: ['M', 'L'],
-        image: '/t-shirts-men/camisa_cafe.webp',
+        images: ['/t-shirts-men/camisa_cafe.webp', '/t-shirts-men/camisa_cafe1.webp', '/t-shirts-men/camisa_negra.webp'],
         labels: ['men']
     },
     {
@@ -28,7 +28,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Diseño en negro limpio.',
         badge: undefined,
         sizes: ['M', 'L'],
-        image: '/t-shirts-men/camisa_negra.webp',
+        images: ['/t-shirts-men/camisa_negra.webp', '/t-shirts-men/camisa_negra1.webp', '/t-shirts-men/camisa_blanca.webp'],
         labels: ['men']
     },
     {
@@ -38,7 +38,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Streatwear blanca comoda.',
         badge: 'NEW', // O 'BEST' o undefined
         sizes: ['S', 'M', 'L', 'XL'],
-        image: '/t-shirts-men/camisa_blanca.webp', // Tu ruta de imagen
+        images: ['/t-shirts-men/camisa_blanca.webp', '/t-shirts-men/camisa_blanca1.webp', '/t-shirts-men/camisa_cafe.webp'],
         labels: ['men', 'new release']
     },
     {
@@ -48,7 +48,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Oversize beige ligera.',
         badge: undefined,
         sizes: ['M', 'L'],
-        image: '/t-shirts-men/camisa_cafe.webp',
+        images: ['/t-shirts-men/camisa_cafe.webp', '/t-shirts-men/camisa_cafe1.webp', '/t-shirts-men/camisa_negra.webp'],
         labels: ['men']
     },
     {
@@ -58,7 +58,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Diseño en negro limpio.',
         badge: undefined,
         sizes: ['M', 'L'],
-        image: '/t-shirts-men/camisa_negra.webp',
+        images: ['/t-shirts-men/camisa_negra.webp', '/t-shirts-men/camisa_negra1.webp', '/t-shirts-men/camisa_blanca.webp'],
         labels: ['men']
     },
     {
@@ -68,7 +68,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Streatwear blanca comoda.',
         badge: 'NEW', // O 'BEST' o undefined
         sizes: ['S', 'M', 'L', 'XL'],
-        image: '/t-shirts-men/camisa_blanca.webp', // Tu ruta de imagen
+        images: ['/t-shirts-men/camisa_blanca.webp', '/t-shirts-men/camisa_blanca1.webp', '/t-shirts-men/camisa_cafe.webp'],
         labels: ['men', 'new release']
     },
     {
@@ -78,7 +78,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Oversize beige ligera.',
         badge: undefined,
         sizes: ['M', 'L'],
-        image: '/t-shirts-men/camisa_cafe.webp',
+        images: ['/t-shirts-men/camisa_cafe.webp', '/t-shirts-men/camisa_cafe1.webp', '/t-shirts-men/camisa_negra.webp'],
         labels: ['men']
     },
     {
@@ -88,7 +88,7 @@ export const menProducts: Product[] = [
         shortDescription: 'Diseño en negro limpio.',
         badge: undefined,
         sizes: ['M', 'L'],
-        image: '/t-shirts-men/camisa_negra.webp',
+        images: ['/t-shirts-men/camisa_negra.webp', '/t-shirts-men/camisa_negra1.webp', '/t-shirts-women/camisa_cafe_mujer.webp'],
         labels: ['men']
     },
 ];
@@ -99,7 +99,7 @@ export const womenProducts: Product[] = Array.from({length: 6}).map((_, i) => ({
     price: 55 + i * 6,
     shortDescription: 'Soft fit for daily wear.',
     sizes: ['XS','S','M','L'],
-    image: `/t-shirts-women/camisa_cafe_mujer.webp`,
+    images: ['/t-shirts-women/camisa_cafe_mujer.webp', '/caps/gorra_blanca.webp', '/caps/gorra_cafe_verde.webp'],
     labels: ['women']
 }))
 
@@ -110,7 +110,7 @@ export const capsProducts: Product[] = [
         price: 35,
         shortDescription: 'Tipo beisbolera con malla Essentials.',
         sizes: ['7', '7⅛'],
-        image: '/caps/gorra_blanca.webp',
+        images: ['/caps/gorra_blanca.webp', '/caps/gorra_blanca1.webp', '/caps/gorra_cafe_verde.webp'],
         labels: ['caps']
     },
     {
@@ -119,7 +119,7 @@ export const capsProducts: Product[] = [
         price: 35,
         shortDescription: 'Tipo beisbolera con logo Essentials.',
         sizes: ['7', '7⅛', '7¼'], // Si no aplica
-        image: '/caps/gorra_cafe_verde.webp',
+        images: ['/caps/gorra_cafe_verde.webp', '/caps/gorra_cafe_verde1.webp', '/caps/gorra_negra_logo_gris.webp'],
         labels: ['caps']
     },
     {
@@ -128,7 +128,7 @@ export const capsProducts: Product[] = [
         price: 35,
         shortDescription: 'Tipo fifty logo Essentials gris.',
         sizes: ['7', '7⅜'], // Si no aplica
-        image: '/caps/gorra_negra_logo_gris.webp',
+        images: ['/caps/gorra_negra_logo_gris.webp', '/caps/gorra_negra_logo_gris1.webp', '/caps/gorra_negra_verde.webp'],
         labels: ['caps']
     },
     {
@@ -137,7 +137,7 @@ export const capsProducts: Product[] = [
         price: 35,
         shortDescription: 'Tipo fifty teja verde logo Essentials.',
         sizes: ['7', '7⅛', '7¼'], // Si no aplica
-        image: '/caps/gorra_negra_verde.webp',
+        images: ['/caps/gorra_negra_verde.webp', '/caps/gorra_negra_verde1.webp', '/caps/gorra_negra.webp'],
         labels: ['caps']
     },
     {
@@ -146,7 +146,7 @@ export const capsProducts: Product[] = [
         price: 35,
         shortDescription: 'Tipo beisbolera fifty logo dorado.',
         sizes: ['7', '7⅛'], // Si no aplica
-        image: '/caps/gorra_negra.webp',
+        images: ['/caps/gorra_negra.webp', '/caps/gorra_negra1.webp', '/caps/gorra_blanca.webp'],
         labels: ['caps']
     },
 ];

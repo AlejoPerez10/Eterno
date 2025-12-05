@@ -9,7 +9,7 @@ export default function Footer() {
         <div ref={view} className="appear max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
             <h4 className="font-bold mb-3 text-[#b69c50]">Information</h4>
-            <p className="text-sm text-white">About the page and us. Replace this placeholder with your own text.</p>
+            <p className="text-sm text-white">Streetwear Clothing Brand.</p>
             </div>
 
             <div>

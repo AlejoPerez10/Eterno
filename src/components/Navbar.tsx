@@ -3,7 +3,6 @@ import Link from 'next/link'
 import { useInView } from '../hooks/useInView'
 
 export default function Navbar() {
-    const items = ['Products','Men','Women','Caps','Accesories','About Us']
     const view = useInView<HTMLDivElement>()
 
     
@@ -16,17 +15,13 @@ export default function Navbar() {
                 </Link>
             </div>
 
-            <ul className="hidden md:flex gap-6 items-center text-sm text-white">
-                {items.map(i => (
-                <li key={i}>
-                    <Link 
-                        href={`#${i.toLowerCase().replace(/\s+/g,'-')}`}
-                        className="hover:text-eterno transition-colors"
-                    >
-                        {i}
-                    </Link>
-                </li>
-                ))}
+            <ul className="hidden md:flex gap-6 items-center text-sm text-white hover:text-eterno transition-colors">
+                <a href='/products' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Products</a>
+                <a href='/#men' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Men</a>
+                <a href='/#women' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Women</a>
+                <a href='/#caps' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Caps</a>
+                <a href='/' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Accesories</a>
+                <a href='/' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>About Us</a>
             </ul>
 
             {/* Right side - cart placeholder */}
