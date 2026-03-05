@@ -107,7 +107,7 @@ export default function ProductCard({ product }: { product: Product }) {
                 <div className="text-xs text-white">Sizes: {product.sizes?.join(' · ')}</div>
             </div>
 
-            <a href='/' className="px-3 py-1 bg-eterno text-white font-semibold rounded text-md bg-[#726232] hover:bg-[#b69c50] hover:scale-120 transition-all">VER ⮞</a>
+            <a href='/product' className="px-3 py-1 bg-eterno text-white font-semibold rounded text-md bg-[#726232] hover:bg-[#b69c50] hover:scale-120 transition-all">VER ⮞</a>
             </div>
         </div>
         </section>

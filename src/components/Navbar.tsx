@@ -21,7 +21,7 @@ export default function Navbar() {
                 <a href='/#women' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Women</a>
                 <a href='/#caps' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Caps</a>
                 <a href='/' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>Accesories</a>
-                <a href='/' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>About Us</a>
+                <a href='/#footer' className='cursor-pointer hover:text-[#f4d36e] hover:scale-120 transition ease-in-out'>About Us</a>
             </ul>
 
             {/* Right side - cart placeholder */}

@@ -10,18 +10,14 @@ export default function ProductsPage() {
     ]
 
     return (
-        <main className="relative h-screen w-full pt-30">
+        <main className="relative h-screen w-full pt-30 flex flex-col justify-center">
             <div className='fixed hero-overlay h-screen w-full -z-1 inset-0'></div>
             <img src="/fondo.png" alt="Hero background" className="fixed inset-0 w-full h-full object-cover -z-10"/>
-            <h1 className="text-white text-4xl font bold mb-6 ps-20">
-                All Products
+            <h1 className="text-white text-4xl font bold mb-6 mt-44 mx-auto">
+                Gorra Blanca
             </h1>
 
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 z-50 px-20 pb-16">
-                {all.map((product) => (
-                    <ProductCard key={product.id} product={product} />
-                ))}
-            </div>
+            <img src="/caps/blanca_e_negro.webp" alt="gorra blanca" className='w-160 mx-auto'/>
             
             <Footer/>
         </main>
